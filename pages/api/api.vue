@@ -403,8 +403,8 @@
                 if (e === 'set-tabbar') {
                     return;
                 }
-                let url = ~e.indexOf('platform') ? e : '/pages/API/' + e + '/' + e;
-				index.navigate_to(url);
+                let url = '/pages/apiPage/' + e.url + '/' + e.url;
+				api.navigate_to(url);
             }
         }
     };
