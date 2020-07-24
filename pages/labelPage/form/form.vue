@@ -1,6 +1,7 @@
 <template>
     <view>
-        <view>
+		<page-head title="form"></page-head>
+		<label-description :title="labelDescription"></label-description>
             <form @submit="formSubmit" @reset="formReset">
                 <view class="paddingWrap">
                     <view class="title">switch</view>
@@ -43,13 +44,13 @@
                     <button type="default" form-type="reset">Reset</button>
                 </view>
             </form>
-        </view>
     </view>
 </template>
 <script>
     export default {
         data() {
             return {
+				labelDescription: 'form表单'
             }
         },
         methods: {

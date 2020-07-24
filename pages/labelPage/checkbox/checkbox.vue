@@ -1,5 +1,7 @@
 <template>
 	<view>
+		<page-head title="checkbox"></page-head>
+		<label-description :title="labelDescription"></label-description>
 		<view class="paddingWrap">
 			<view class="title">默认样式</view>
 			<view>
@@ -49,6 +51,7 @@
 export default {
 	data() {
 		return {
+			labelDescription: 'checkbox 复选框',
 			title: 'checkbox 复选框',
 			items: [
 				{

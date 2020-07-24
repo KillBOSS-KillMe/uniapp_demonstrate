@@ -1,5 +1,7 @@
 <template>
     <view>
+		<page-head title="button"></page-head>
+		<label-description :title="labelDescription"></label-description>
         <view class="paddingWrap">
             <button type="primary">页面主操作 Normal</button>
             <button type="primary" loading="true">页面主操作 Loading</button>

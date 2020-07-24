@@ -22,6 +22,7 @@
 export default {
 	data() {
 		return {
+			labelDescription: '可拖动区域组件',
 			x: 0,
 			y: 0,
 			old: {
