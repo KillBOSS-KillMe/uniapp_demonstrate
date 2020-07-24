@@ -1,0 +1,110 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "内置组件",
+				"enablePullDownRefresh": true,
+				// #ifdef H5
+				// "navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleView": false
+				}
+			}
+		}, {
+			"path": "pages/api/api",
+			"style": {
+				"navigationBarTitleText": "接口",
+				"enablePullDownRefresh": true,
+				// #ifdef H5
+				// "navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleView": false
+				}
+			}
+		}, {
+			"path": "pages/extui/extui",
+			"style": {
+				"navigationBarTitleText": "扩展组件",
+				"enablePullDownRefresh": true,
+				// #ifdef H5
+				// "navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleView": false
+				}
+			}
+		}, {
+			"path": "pages/template/template",
+			"style": {
+				"navigationBarTitleText": "模板",
+				"enablePullDownRefresh": true,
+				// #ifdef H5
+				// "navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleView": false
+				}
+			}
+		}, {
+			"path": "pages/labelPage/view/view",
+			"style": {}
+		}
+	],
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式（list 的索引项）
+	// 	"list": [{
+	// 		"name": "test1111", //模式名称
+	// 		"path": "pages/index/index" //启动页面，必选
+	// 	}]
+	// },
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "未命名页面",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#007AFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "内置组件",
+				"iconPath": "./static/images/tabBar/label.png",
+				"selectedIconPath": "static/images/tabBar/label@selected.png"
+			},
+			{
+				"pagePath": "pages/api/api",
+				"text": "接口",
+				"iconPath": "static/images/tabBar/api.png",
+				"selectedIconPath": "static/images/tabBar/api@selected.png"
+			},
+			{
+				"pagePath": "pages/extui/extui",
+				"text": "扩展组件",
+				"iconPath": "static/images/tabBar/extui.png",
+				"selectedIconPath": "static/images/tabBar/extui@selected.png"
+			},
+			{
+				"pagePath": "pages/template/template",
+				"text": "模板",
+				"iconPath": "static/images/tabBar/template.png",
+				"selectedIconPath": "static/images/tabBar/template@selected.png"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true, //是否自动扫描组件
+		"custom": { //自定义扫描规则
+			// "^uni-(.*)": "@/components/uni-$1.vue"
+			"(.*)": "@/components/public/$1.vue"
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.headerLogo {
+	width: 690rpx;
+	height: auto;
+	padding: 30rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	image {
+		width: 200rpx;
+		height: 200rpx;
+	}
+}
+.doc {
+	width: 690rpx;
+	height: auto;
+	padding: 30rpx;
+	font-size: 30rpx;
+	color: $mainFontColor;
+}
+.labelTypeList {
+	width: 750rpx;
+	height: auto;
+	.typeItem {
+		width: 690rpx;
+		padding: 30rpx;
+		background-color: #fff;
+		margin-top: 30rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text {
+			font-size: 28rpx;
+		}
+		.panelIconOn {
+			transform: rotate(180deg);
+		}
+	}
+	.active {
+		background-color: $themeColor;
+		color: #fff;
+	}
+	.typeCon {
+		width: 690rpx;
+		height: auto;
+		padding: 30rpx;
+		background-color: #fff;
+		border-bottom: 1rpx solid $borderColor;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
