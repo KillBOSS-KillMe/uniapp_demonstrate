@@ -64,6 +64,7 @@ export default {
 		height: 300rpx;
 		background: $themeBGColor;
 		margin: 30rpx 0;
+		overflow: hidden;
 		movable-view {
 			width: 100rpx;
 			height: 100rpx;
@@ -72,6 +73,10 @@ export default {
 			justify-content: center;
 			background-color: $themeColor;
 			color: #fff;
+		}
+		.max {
+			width: 400rpx;
+			height: 400rpx;
 		}
 	}
 }
