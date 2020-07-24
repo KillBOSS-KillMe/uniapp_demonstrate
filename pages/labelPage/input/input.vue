@@ -1,5 +1,7 @@
 <template>
     <view>
+		<page-head title="input"></page-head>
+		<label-description title="输入框"></label-description>
         <view class="uni-common-mt">
             <view class="paddingWrap">
                 <view class="title">可自动聚焦的input</view>
