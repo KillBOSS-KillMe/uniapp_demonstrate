@@ -22,7 +22,7 @@
 <script>
 	import Api from './api-model.js';
 	const api = new Api();
-    import uLink from '@/components/uLink.vue'
+    import uLink from '@/components/u-link/u-link.vue'
     export default {
         components: {
             uLink

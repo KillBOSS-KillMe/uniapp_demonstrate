@@ -16,7 +16,7 @@
 <script>
 	import Extui from './extui-model.js';
 	const extui = new Extui();
-    import uLink from '@/components/uLink.vue'
+    import uLink from '@/components/u-link/u-link.vue'
     export default {
         components: {
             uLink

@@ -22,10 +22,10 @@
 <script>
 import Index from './index-model.js';
 const index = new Index();
-import uLink from '@/components/uLink.vue';
+import uLink from '@/components/u-link/u-link.vue';
 export default {
 	components: {
-		uLink
+		// uLink
 	},
 	data() {
 		return {

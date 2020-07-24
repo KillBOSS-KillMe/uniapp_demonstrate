@@ -22,11 +22,11 @@
 <script>
 import Template from './template-model.js';
 const template = new Template();
-import uLink from '@/components/uLink.vue';
+// import uLink from '@/components/u-link/u-link.vue';
 export default {
-	components: {
-		uLink
-	},
+	// components: {
+	// 	uLink
+	// },
 	data() {
 		return {
 			list: [
